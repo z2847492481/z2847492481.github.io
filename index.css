@@ -1,0 +1,196 @@
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  width: 400px;
+  height: 1770px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  gap: 5px;
+}
+
+.img {
+  width: 350px;
+  height: 200px;
+}
+img {
+  width: 350px;
+  height: 200px;
+}
+.food {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.food-title {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  width: 350px;
+  margin-top: 10px;
+}
+.food-des {
+  font-family: "Outfit", sans-serif;
+  width: 350px;
+  color: hsl(30, 10%, 34%);
+  margin-top: 5px;
+}
+
+.preparation-time {
+  width: 350px;
+  font-family: "Outfit", sans-serif;
+  margin-top: 10px;
+  height: 130px;
+  border-radius: 15px;
+  background-color: hsl(330, 100%, 98%);
+}
+.preparation-time-title {
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 21px;
+  margin-top: 10px;
+}
+.preparation-time-ul li {
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.preparation-time-ul li .label {
+  font-weight: 600;
+}
+
+.preparation-time-ul li .content {
+  color: hsl(30, 10%, 34%);
+}
+
+.ingredients {
+  margin-top: 10px;
+  width: 350px;
+  height: 160px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 7px;
+}
+.ingredients .ingredients-title {
+  font-family: "Young Serif", serif;
+  font-size: 20px;
+  color: hsl(14, 45%, 36%);
+}
+.ingredients-ul {
+  padding: 15px;
+  margin: 5px;
+}
+
+.ingredients-ul li {
+  padding-left: 10px;
+}
+
+.line {
+  box-sizing: content-box;
+  width: 350px;
+  height: 5px;
+  border-bottom: 1px solid grey;
+}
+
+hr {
+  border: none; /* 去除默认边框 */
+  height: 2px; /* 设置分割线高度 */
+  background-color: #3333332d; /* 设置分割线颜色 */
+  width: 350px;
+}
+
+.instructions {
+  margin-top: 5px;
+  width: 350px;
+  height: 480px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 10px;
+}
+
+.instructions .instructions-title {
+  font-family: "Young Serif", serif;
+  font-size: 20px;
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions-ol {
+  padding: 15px;
+  margin: 5px;
+}
+
+.instructions-ol li {
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.instructions-ol li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions-ol li .label {
+  font-weight: 600;
+}
+
+.instructions-ol li .content {
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition {
+  margin-top: 10px;
+  width: 350px;
+  height: 250px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition .nutrition-title {
+  font-family: "Young Serif", serif;
+  font-size: 20px;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition .nutrition-desc {
+  margin-top: 10px;
+}
+
+table {
+  width: 350px;
+  border-collapse: separate;
+  margin-top: 10px;
+  border-spacing: 0 10px;
+  font-size: 18px;
+}
+th,
+td {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+thead {
+  display: none;
+}
+
+tbody tr:last-child td {
+  border-bottom: none; /* 移除最后一行的分割线 */
+}
+
+tbody tr td:first-child {
+  color: hsl(30, 10%, 34%);
+}
+tbody tr td:nth-child(2) {
+  color: hsl(14, 45%, 36%);
+}
