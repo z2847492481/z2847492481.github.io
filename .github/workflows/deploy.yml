@@ -1,0 +1,38 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  push:
+    branches: [main] # 触发分支，根据实际情况修改
+  workflow_dispatch: # 允许手动触发
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build VitePress
+        run: npm run docs:build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.BLOG_TOKEN }} # 或使用GITHUB_TOKEN
+          publish_dir: ./docs/.vitepress/dist # 根据实际路径调整
