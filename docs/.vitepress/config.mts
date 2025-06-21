@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,25 +7,33 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "Home", link: "/" },
+      { text: "Kafka", link: "/Kafka/index" },
+      { text: "K8S", link: "/K8S/index" },
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      "/Kafka": [
+        {
+          items: [
+            { text: "介绍", link: "/Kafka/" },
+            { text: "基本使用", link: "/Kafka/basic-use" },
+          ],
+        },
+      ],
+      "/K8S": [
+        {
+          items: [{ text: "介绍", link: "/K8S/" }],
+        },
+      ],
+    },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
+    outline: {
+      label: "本页目录",
+    },
   },
-  head:[
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
-  ]
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
 })
