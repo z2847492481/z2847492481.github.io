@@ -1,0 +1,1 @@
+import{_ as a,c as t,o,ae as c}from"./chunks/framework.Dgg8-8ov.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Kafka/index.md","filePath":"Kafka/index.md"}'),n={name:"Kafka/index.md"};function r(s,e,i,l,d,p){return o(),t("div",null,e[0]||(e[0]=[c("",7)]))}const _=a(n,[["render",r]]);export{h as __pageData,_ as default};
