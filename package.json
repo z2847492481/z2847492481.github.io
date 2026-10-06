@@ -1,10 +1,18 @@
 {
+  "name": "z2847492481.github.io",
+  "private": true,
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z2847492481/z2847492481.github.io.git"
+  },
+  "homepage": "https://github.com/z2847492481/z2847492481.github.io#readme",
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.4"
   }
 }
