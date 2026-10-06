@@ -15,6 +15,8 @@ export default defineConfig({
         {
           items: [
             { text: "总览", link: "/aspnet/" },
+            { text: "HelloWorld 最小 Web 程序", link: "/aspnet/hello-world" },
+            { text: "三层架构 + PostgreSQL", link: "/aspnet/three-layer-postgresql" },
           ],
         },
       ],
